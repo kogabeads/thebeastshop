@@ -5,9 +5,9 @@
       <div class="home_box">
         <div class="box_head">
           <p>
-            <a href="#">
+            <router-link to="/goodsList">
               <img :src='sublist.src' style="display: inline;">
-            </a>
+            </router-link>
           </p>
         </div>
 
@@ -15,10 +15,12 @@
           <p class="txt">{{ sublist.txt }}
             <span class="price" style="display:block;">{{ sublist.price }}</span>
           </p>
-          
-          <p class="right">
-              <a href="#" class="btn">{{ sublist.more }}</a>
-          </p>
+
+          <router-link to="/goodsList">
+            <p class="right">
+                <a href="#" class="btn">{{ sublist.more }}</a>
+            </p>
+          </router-link>
         </div>
       </div>
 

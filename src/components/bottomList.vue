@@ -1,19 +1,13 @@
 <template>
   <ul class="bottom_list">
     <li v-for="bottomlist in bottomlists">
-      <router-link :to="bottomlist.path">{{bottomlist.txt}}</router-link>
+      <router-link to="/vip">{{bottomlist.txt}}</router-link>
     </li>
   </ul>
 </template>
 
 <script>
 export default {
-
-  data () {
-    return {
-      
-    }
-  },
   computed:{
     bottomlists(){
       return this.$store.state.bottomlist

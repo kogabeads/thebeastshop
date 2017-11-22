@@ -53,12 +53,6 @@
   import bottomList from '@/components/bottomList.vue'
 
   export default {
-
-    data () {
-      return {
-        
-      }
-    },
     components:{
       pubHeader,subjectList,bottomList
     }
