@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
+    cardshow:false,
     sublists:[
     	{'src':'http://img.thebeastshop.com/beast_website/1af9323a75ad41fc92efabaf83cd884f.jpeg@2e_0o_0l_486h_750w_90q.src','txt':'2017.11.11 | Dream Space 我在梦里','price':'￥150起','more':'了解更多'},
     	{'src':'http://img.thebeastshop.com/beast_website/8bfd6d60bcf2450ba16632426de7f86e.jpeg@2e_0o_0l_486h_750w_90q.src','txt':'海淘专场满减','price':'￥199起','more':'进入专题'},
@@ -40,12 +41,16 @@ const store = new Vuex.Store({
         {'src':"http://img.thebeastshop.com/image/20170414143053275137.jpg@2e_0o_0l_345h_330w_90q.src",'name':"意大利精湛工艺的体现",'logo':'COSABELLA','txt':'MINOA粉色深V荷叶边蕾丝吊带睡裙','price':'¥935.00'},
         {'src':"http://img.thebeastshop.com/image/20170504184039615618.jpg@2e_0o_0l_345h_330w_90q.src",'name':"完美冻龄体验",'logo':'MY BEAUTY BOX x THE BEAST','txt':'欧莱雅集团冻龄小美盒 粉色化妆包','price':'¥390.00'},
         {'src':"http://img.thebeastshop.com/image/20170517171011657747.jpg@2e_0o_0l_345h_330w_90q.src",'name':"轻松打造光滑肌肤",'logo':"Silk'n",'txt':'家用激光全身脱毛器','price':'¥2999.00'},
-        {'src':"http://img.thebeastshop.com/image/20170615175307465568.jpg@2e_0o_0l_345h_330w_90q.src",'name':"意大利高端奢华内衣",'logo':'COSABELLA','txt':'ROSALIND系列 蕾丝吊带背心','price':'¥750.00'},
-        {'src':"http://img.thebeastshop.com/image/20170615175307465568.jpg@2e_0o_0l_345h_330w_90q.src",'name':"意大利高端奢华内衣",'logo':'COSABELLA','txt':'ROSALIND系列 蕾丝吊带背心','price':'¥750.00'},
-        {'src':"http://img.thebeastshop.com/image/20170615175307465568.jpg@2e_0o_0l_345h_330w_90q.src",'name':"意大利高端奢华内衣",'logo':'COSABELLA','txt':'ROSALIND系列 蕾丝吊带背心','price':'¥750.00'},
-        {'src':"http://img.thebeastshop.com/image/20170615175307465568.jpg@2e_0o_0l_345h_330w_90q.src",'name':"意大利高端奢华内衣",'logo':'COSABELLA','txt':'ROSALIND系列 蕾丝吊带背心','price':'¥750.00'},
-        {'src':"http://img.thebeastshop.com/image/20170615175307465568.jpg@2e_0o_0l_345h_330w_90q.src",'name':"意大利高端奢华内衣",'logo':'COSABELLA','txt':'ROSALIND系列 蕾丝吊带背心','price':'¥750.00'},
+        {'src':"http://img.thebeastshop.com/image/20170517191315840542.jpg@2e_0o_0l_345h_330w_90q.src",'name':"在家拥有轻松夏季",'logo':'ILUMINAGE','txt':'彩光射频家用脱毛仪','price':'¥3200.00'},
+        {'src':"http://img.thebeastshop.com/imagePro/PROD001016844/PROD001016844_1_1477628460329.jpg@2e_0o_0l_345h_330w_90q.src",'name':"消臭的天然配方",'logo':'BALLON','txt':'室内及衣物香氛剂-玫瑰','price':'¥290.00'},
+        {'src':"http://img.thebeastshop.com/imagePro/PROD001016829/PROD001016829_1_1477628460329.jpg@2e_0o_0l_345h_330w_90q.src",'name':"让草药的芬芳随身同行",'logo':'BALLON','txt':'斗牛犬香包钥匙圈','price':'¥130.00'},
+        {'src':"http://img.thebeastshop.com/imagePro/PROD001016831/PROD001016831_1_1477628460329.jpg@2e_0o_0l_345h_330w_90q.src",'name':"意大利高端奢华内衣",'logo':'COSABELLA','txt':'帆船出海香包钥匙圈','price':'¥750.00'}
     ]
+  },
+  mutations: {
+    cardChange (state) {
+      state.cardshow = !state.cardshow;
+    }
   }
 })
 

@@ -11,9 +11,9 @@
 
     	<!-- 更多列表 -->
       <p class="btn_group clearfix">
-          <button type="button" class="u-btn-dark" id="J_OpenMenuBtm">按分类选购</button>
-          <a href="/app/static/name/wap-shops.htm" class="u-btn-dark">寻找实体店</a>
-          <a href="/autopage/mengnan.htm" class="u-btn-dark">猛男课堂</a>
+          <button @click="handleCard" type="button" class="u-btn-dark" id="J_OpenMenuBtm">按分类选购</button>
+          <a href="" class="u-btn-dark">寻找实体店</a>
+          <a href="" class="u-btn-dark">猛男课堂</a>
       </p>
 
       <!-- 底部列表 -->
@@ -55,6 +55,11 @@
   export default {
     components:{
       pubHeader,subjectList,bottomList
+    },
+    methods:{
+    	handleCard(){
+    		this.$store.commit('cardChange');
+    	}
     }
   }
 </script>
